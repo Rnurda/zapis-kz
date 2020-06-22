@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button android:id="@+id/bottom_zapis_btn"
+    android:layout_width="match_parent"
+    android:text="Записаться"
+    android:layout_height="50dp"
+    android:background="@color/green"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

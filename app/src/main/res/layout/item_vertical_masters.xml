@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_master_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <ImageView
+        android:id="@+id/master_avatar_cv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/masters_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/master_avatar_cv"
+        app:layout_constraintTop_toTopOf="@id/master_avatar_cv"
+        app:layout_constraintBottom_toTopOf="@id/masters_speciality_tv"/>
+    <TextView
+        android:id="@+id/masters_speciality_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brovist"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/masters_name_tv"
+        app:layout_constraintBottom_toBottomOf="@id/master_avatar_cv"
+        app:layout_constraintTop_toBottomOf="@id/masters_name_tv"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#807E7E"
+        app:layout_constraintTop_toBottomOf="@id/masters_speciality_tv"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

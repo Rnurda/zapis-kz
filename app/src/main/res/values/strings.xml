@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="start_margin">20dp</dimen>
+    <dimen name="heade_text_size">30sp</dimen>
+    <string name="app_name">Zapis.kz</string>
+    <string name="text_zapis_city">Запись в <font color="#FF0000">Алматы</font></string>
+</resources>

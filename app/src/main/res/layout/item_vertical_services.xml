@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_service_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="20dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:background="@drawable/bottom_border">
+    <TextView
+        android:id="@+id/vertical_service_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Корекция бровей"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/vertical_service_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="1 час"
+        app:layout_constraintTop_toBottomOf="@id/vertical_service_title"
+        app:layout_constraintStart_toStartOf="@id/vertical_service_title"
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/vertical_service_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1500 t"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/vertical_service_time"
+        app:layout_constraintBottom_toBottomOf="@id/vertical_service_time"
+        app:layout_constraintStart_toEndOf="@id/vertical_service_time"/>
+    <TextView
+        android:id="@+id/service_prepayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="предоплата 1000"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:background="@drawable/milk_backgroung"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/vertical_service_time"
+        app:layout_constraintStart_toStartOf="@id/vertical_service_time"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
